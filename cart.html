@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoe Store</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+    <!-- Header -->
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected shoes before checkout.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Classic Leather Shoe</td>
+                    <td>₦15,000</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>in progress</td>
+                    <td><button class="btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Sharp Shoe</td>
+                    <td>₦12,500</td>
+                    <td><input type="number" value="2" min="1"></td>
+                    <td>in progress</td>
+                    <td><button class="btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Comfort slides</td>
+                    <td>₦8,000</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>in progress</td>
+                    <td><button class="btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Sharp Canvas</td>
+                    <td>₦20,000</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>in progress</td>
+                    <td><button class="btn">Remove</button></td>
+            </tbody>
+        </table>
+
+        <h3>Total:</h3>
+        
+        <div class="button-container">
+        <a class="btn" href="checkout.html">Proceed to Checkout</a>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IYK's Shoe Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    </body>
+
+</html>

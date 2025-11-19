@@ -1,0 +1,301 @@
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body general styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* ===== HEADER SECTION ===== */
+header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/background.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+/* ===== NAVIGATION BAR (TOP-RIGHT POSITION) ===== */
+nav {
+  position: absolute; /* sits on top of header */
+  top: 20px;
+  right: 40px;
+  background: transparent; /* remove the dark bar */
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+  color: skyblue;
+}
+
+nav a.active {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
+
+
+/* ===== HOME / SHOP SECTION ===== */
+#shop {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../images/background.jpg") no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#shop h2 {
+  font-size: 2.3rem;
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+#shop p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  background: darkblue;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.btn:hover {
+  background: skyblue;
+  color: black;
+}
+.btn:active {
+  background: navy;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../images/background.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+#about h2 {
+  color: darkblue;
+  margin-bottom: 15px;
+}
+#about p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../images/background.jpg") no-repeat center center/cover;
+  padding: 50px 20px;
+  text-align: center;
+}
+#contact h2 {
+  color: darkblue;
+  margin-bottom: 15px;
+}
+#contact p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ===== FORM STYLING ===== */
+form {
+  width: 80%;
+  max-width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+input,
+textarea,
+select {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  border-color: darkblue;
+  box-shadow: 0 0 6px rgba(0, 0, 255, 0.2);
+}
+
+/* ===== PRODUCTS ===== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== CART ===== */
+#cart {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+#cart table th,
+#cart table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+#cart table th {
+  background-color: darkblue;
+  color: white;
+}
+
+/* ===== CHECKOUT PAGE ===== */
+#checkout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../images/background.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.checkout-box {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+.checkout-box h2 {
+  color: darkblue;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* PAYMENT SECTION ALIGNMENT FIX */
+.checkout-box label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.checkout-box input[type="radio"] {
+  accent-color: darkblue;
+  transform: scale(1.1);
+}
+
+/* Order summary */
+.checkout-box ul {
+  list-style: none;
+  padding: 0;
+}
+.checkout-box ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* Button inside checkout */
+.checkout-box button.btn {
+  width: 100%;
+  margin-top: 15px;
+}

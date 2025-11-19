@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoe Store</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+       
+    <!--  HEADER -->
+    <header>
+        <h1>Checkout</h1>
+        <p>Complete your order securely</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- CHECKOUT SECTION -->
+    <section id="checkout">
+
+        <!-- BILLING DETAILS -->
+        <div class="checkout-box">
+            <h2>Billing Details</h2>
+
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number">
+
+                <label>Delivery Address</label>
+                <textarea placeholder="Enter full delivery address"></textarea>
+
+                <label>State / City</label>
+                <input type="text" placeholder="Enter your city/state">
+
+                <label>Delivery Method</label>
+                <select>
+                    <option>Select Delivery Option</option>
+                    <option>Standard Delivery</option>
+                    <option>Express Delivery</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="checkout-box">
+            <h2>Order Summary</h2>
+
+            <ul>
+                <li>Classic Leather Shoe – ₦15,000 × 1</li>
+                <li>Sharp Shoe – ₦12,500 × 2</li>
+                <li>Comfort Slides – ₦8,000 × 1</li>
+                <li><strong>Delivery Fee – ₦1,500</strong></li>
+                <hr>
+                <li><strong>Total – ₦49,500</strong></li>
+            </ul>
+        </div>
+    
+        <!-- PAYMENT SECTION -->
+        <div class="checkout-box">
+            <h2>Payment Method</h2>
+
+            <label><input type="radio" name="payment"> Pay on Delivery</label><br>
+            <label><input type="radio" name="payment"> Bank Transfer</label><br>
+            <label><input type="radio" name="payment"> Debit Card</label><br><br>
+
+            <button class="btn">Proceed to Payment</button>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 IYK's Shoe Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    </body>
+
+</html>
